@@ -1,6 +1,10 @@
 {
   "name": "client-msgdistribution-go",
-  "registry": "pipdevs/client-msgdistribution-go",
-  "version": "1.0.0",
-  "build": 0
+  "type": "client",
+  "language": "go",
+  "version": "1.1.0",
+  "build": 0,
+  "registry": "pipservices",
+  "artifacts": [
+  ]
 }
