@@ -17,12 +17,10 @@ func NewMessageDistributionClientFactory() *MessageDistributionClientFactory {
 
 	nullClientV1Descriptor := cref.NewDescriptor("service-msgdistribution", "client", "null", "default", "1.0")
 	commandableHttpClientV1Descriptor := cref.NewDescriptor("service-msgdistribution", "client", "commandable-http", "default", "1.0")
-	httpClientV1Descriptor := cref.NewDescriptor("service-msgdistribution", "client", "http", "default", "1.0")
 	commandableGrpcClientV1Descriptor := cref.NewDescriptor("service-msgdistribution", "client", "commandable-grpc", "default", "1.0")
 	grpcClientV1Descriptor := cref.NewDescriptor("service-msgdistribution", "client", "grpc", "default", "1.0")
 
 	c.RegisterType(nullClientV1Descriptor, clients1.NewMessageDistributionNullClientV1)
-	c.RegisterType(httpClientV1Descriptor, clients1.NewMessageDistributionGrpcClientV1)
 	c.RegisterType(commandableHttpClientV1Descriptor, clients1.NewMessageDistributionHttpClientV1)
 	c.RegisterType(commandableGrpcClientV1Descriptor, clients1.NewMessageDistributionCommandableGrpcClientV1)
 	c.RegisterType(grpcClientV1Descriptor, clients1.NewMessageDistributionGrpcClientV1)
